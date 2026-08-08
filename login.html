@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title data-i18n="nav_login">Login</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container flex-center min-h-screen">
+ <div class="auth-card text-center">
+ <h2 data-i18n="nav_login">Login</h2>
+ <form id="loginForm" onsubmit="handleLogin(event)"
+class="mt-2 text-left">
+ <div class="form-group">
+ <label data-i18n="email_label">Email</label>
+ <input type="email" id="logEmail" required>
+ </div>
+ <div class="form-group">
+ <label data-i18n="pass_label">Password</label>
+ <input type="password" id="logPass" required>
+ </div>
+ <div class="security-check" id="securityCheck">
+  <p class="security-title">Security check</p>
+  <div class="security-question">
+   <span id="securityPrompt">Solve: 3 + 4 = ?</span>
+   <input type="number" id="securityAnswer" placeholder="Answer" required>
+  </div>
+  <label class="security-box">
+   <input type="checkbox" id="botCheckBox">
+   I verify I am not a robot
+  </label>
+ </div>
+ <button type="submit" class="btn w-100" datai18n="nav_login">Login</button>
+ </form>
+ <p class="mt-2">
+ <span data-i18n="no_account">Don't have an
+account?</span>
+ <a href="register.html" datai18n="nav_register">Register</a>
+ </p>
+ <p><a href="index.html" data-i18n="nav_home">Return
+Home</a></p>
+ </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html> 

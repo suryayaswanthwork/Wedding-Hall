@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav_dashboard">Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HallBooker</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="halls.html" data-i18n="nav_halls">Halls</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="lang-toggle" onclick="toggleLanguage()">EN / TE</button>
+            <button onclick="logout()" class="btn btn-outline" data-i18n="nav_logout">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 data-i18n="dash_title">Your Bookings</h2>
+        <div id="bookingsList" class="mt-2">
+            <!-- Bookings populated via script.js -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadDashboard);
+    </script>
+</body>
+</html>

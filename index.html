@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">Hall Booking Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">HallBooker</div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="halls.html" data-i18n="nav_halls">Halls</a></li>
+      <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+      <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="lang-toggle" type="button" onclick="toggleLanguage()">EN / TE</button>
+      <a href="login.html" class="btn" id="nav-login" data-i18n="nav_login">Login</a>
+      <a href="dashboard.html" class="btn btn-outline" data-i18n="nav_dashboard">Dashboard</a>
+      <button onclick="logout()" class="btn hidden" id="nav-logout" data-i18n="nav_logout">Logout</button>
+    </div>
+  </nav>
+
+  <header class="hero" id="gravity-container">
+    <div class="gravity-item gravity-anti" title="Click me to drop!">✦</div>
+    <div class="gravity-item gravity-anti" title="Click me to drop!">✧</div>
+    <div class="gravity-item gravity-anti" title="Click me to drop!">★</div>
+    <div class="gravity-item gravity-anti" title="Click me to drop!">✩</div>
+
+    <div class="hero-content">
+      <div class="hero-badges">
+        <span>✨ Fast booking</span>
+        <span>⭐ Trusted venues</span>
+        <span>🌙 Dark mode</span>
+      </div>
+      <h1 data-i18n="hero_title">Find Your Perfect Venue</h1>
+      <p data-i18n="hero_subtitle">Book wedding halls, party venues, and storage spaces effortlessly.</p>
+      <div class="hero-actions">
+        <a href="halls.html" class="btn btn-large" data-i18n="hero_btn">Explore Halls</a>
+        <a href="services.html" class="btn btn-outline btn-large">See Services</a>
+      </div>
+      <p class="small-text mt-2" data-i18n="gravity_hint">(Hint: Click the floating emojis to see gravity in action!)</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="showcase">
+      <div class="section-heading">
+        <span class="eyebrow">Why HallBooker stands out</span>
+        <h2>Elegant spaces made simple.</h2>
+        <p>From elegant wedding venues to practical storage spaces, everything is presented in a smooth and welcoming experience.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Beautiful listings</h3>
+          <p>Browse polished venue cards with clear pricing and quick booking access.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Secure login</h3>
+          <p>Registered users are validated locally, and the sign-in experience now feels more protected and guided.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Easy navigation</h3>
+          <p>Jump between halls, services, and booking pages with a clean, user-friendly layout.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 HallBooker. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Hall Details</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+ <!-- Exact same navbar config as above -->
+ <div class="logo">HallBooker</div>
+ <ul class="nav-links">
+ <li><a href="index.html" datai18n="nav_home">Home</a></li>
+ <li><a href="halls.html" datai18n="nav_halls">Halls</a></li>
+ <li><a href="services.html" datai18n="nav_services">Services</a></li>
+ <li><a href="about.html" datai18n="nav_about">About</a></li>
+ <li><a href="contact.html" datai18n="nav_contact">Contact</a></li>
+ </ul>
+ <div class="nav-actions">
+ <button id="lang-toggle" onclick="toggleLanguage()">EN /
+TE</button>
+ <a href="login.html" class="btn" id="nav-login" datai18n="nav_login">Login</a>
+ <a href="dashboard.html" class="btn btn-outline" datai18n="nav_dashboard">Dashboard</a>
+ </div>
+ </nav>
+ <div class="container mt-4">
+ <div id="hallDetailContent" class="card p-3">
+ <!-- Populated via script.js -->
+ </div>
+ </div>
+ <script src="script.js"></script>
+ <script>
+ document.addEventListener("DOMContentLoaded",
+loadHallDetails);
+ </script>
+</body>
+</html> 
